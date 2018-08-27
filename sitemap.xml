@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+     <loc>http://localhost/SupplyRefModel/</loc>
+     <lastmod>2018-08-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://localhost/SupplyRefModel/top-level/Introduction/</loc>
+     <lastmod>2018-08-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://localhost/SupplyRefModel/top-level/terminology/</loc>
+     <lastmod>2018-08-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://localhost/SupplyRefModel/transforming-data/querying/</loc>
+     <lastmod>2018-08-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>http://localhost/SupplyRefModel/Operation/Arithmetic/</loc>
+     <lastmod>2018-08-27</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+</urlset>
