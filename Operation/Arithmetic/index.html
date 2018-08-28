@@ -11,7 +11,7 @@
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
-        <link rel="canonical" href="http://localhost/SupplyRefModel/Operation/Arithmetic/">
+        <link rel="canonical" href="https://nilakshkaggarwal.github.io/Operation/Arithmetic/">
       
       
       
@@ -90,7 +90,7 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="http://localhost/SupplyRefModel" title="IBPL Quick Reference Guide" class="md-header-nav__button md-logo">
+        <a href="https://nilakshkaggarwal.github.io" title="IBPL Quick Reference Guide" class="md-header-nav__button md-logo">
           
             <i class="md-icon"></i>
           
@@ -162,7 +162,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="http://localhost/SupplyRefModel" title="IBPL Quick Reference Guide" class="md-nav__button md-logo">
+    <a href="https://nilakshkaggarwal.github.io" title="IBPL Quick Reference Guide" class="md-nav__button md-logo">
       
         <i class="md-icon"></i>
       
@@ -343,6 +343,30 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../relational/" title="Relational" class="md-nav__link">
+      Relational
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../Logical/" title="Logical" class="md-nav__link">
+      Logical
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -421,72 +445,317 @@
                 
                 
                 <h1 id="arithmetic-operators">Arithmetic Operators</h1>
-<p>The binary arithmetic operators supported in IBPL include:
+<p>An arithmetic operator is a mathematical function that takes two operands and performs a calculation on them. </p>
+<p>The arithmetic operators supported in IBPL include:
 addition (+), subtraction (-), multiplication (*), division (/), power (^).
 They each accept two numeric values as input and return a numeric value.</p>
+<p>IBPL follows BODMAS calculation</p>
 <h2 id="addition">Addition</h2>
 <p>The addition operator produces the sum of numeric operands or string concatenation.The Addition Operator is the plus sign (+)</p>
-<ol>
-<li>Example:
-5 + 3</li>
-</ol>
-<p><code>result = 8</code></p>
-<ol>
-<li>Example:
-Measure.[UnitPrice] + 1000</li>
-</ol>
-<p><code>result = one thousand added to unit price</code></p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span><span class="p">(</span><span class="mi">5</span> <span class="o">+</span> <span class="mi">3</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = 8</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">],</span> <span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">+</span><span class="mi">1000</span><span class="p">)</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">NewUnitPrice</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = one thousand added to unit price</p>
+<p>Explaination:</p>
+<table>
+<thead>
+<tr>
+<th>Vesrion Name</th>
+<th>ProducrID</th>
+<th>UnitPrice</th>
+<th>NewUnitPrice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>11,858</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>11,671</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>20,458</td>
+</tr>
+</tbody>
+</table>
 <h2 id="subtraction">Subtraction</h2>
 <p>The subtraction operator subtracts the two operands, producing their difference.The Subtraction Operator is the minus sign (-)</p>
-<p>Example:
-5 - 3</p>
-<p><code>result = 2</code></p>
-<p>Exampe:
-Measure.[UnitPrice] - 1000
-<code>result = one thousand is subtracted from unit price</code></p>
-<p>Example:
-Measure.[unit price] - Measure.[unit cost]
-result = difference between unit price and unit cost</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">select</span><span class="p">(</span><span class="mi">5</span> <span class="o">-</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+
+<p>result = 2</p>
+<p>Exampe:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">],</span> <span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">-</span><span class="mi">1000</span><span class="p">)</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">NewUnitPrice</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = one thousand is subtracted from unit price</p>
+<p>Explaination:</p>
+<table>
+<thead>
+<tr>
+<th>Vesrion Name</th>
+<th>ProducrID</th>
+<th>UnitPrice</th>
+<th>NewUnitPrice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>9,858</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>9,671</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>18,458</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">-</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitCost</span><span class="p">])</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">Profit</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = difference between unit price and unit cost</p>
+<p>Explaination:</p>
+<table>
+<thead>
+<tr>
+<th>Vesrion Name</th>
+<th>ProducrID</th>
+<th>UnitPrice</th>
+<th>UnitCost</th>
+<th>Profit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>10,000</td>
+<td>858</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>8,000</td>
+<td>2,671</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>18,000</td>
+<td>1,458</td>
+</tr>
+</tbody>
+</table>
 <p>Note:while adding or subtracting measures, if a measure has a null value, then the result of the opeartion will be null.  To avoid this, user should use the Coalesce() function to take the non null values.</p>
 <h2 id="multiplication">Multiplication</h2>
 <p>The multiplication operator produces the product of the operands.The Multiplication Operator is the asterisk (*)</p>
-<p>Example:
-5 * 3
-result = 15</p>
-<p>Example:
-Measure.[unit price] * 100
-result = one hundred times unit price</p>
-<p>Example:
-Measure.[unit sold] * Measure.[unit price]
-result = product of unit sold and unit price</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span><span class="p">(</span><span class="mi">5</span> <span class="o">*</span> <span class="mi">3</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = 15</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="n">Measure</span><span class="p">[</span><span class="n">UnitPrice</span><span class="p">],</span> <span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">)</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">NewUnitPrice</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = one hundred times unit price</p>
+<p>Explaination:</p>
+<table>
+<thead>
+<tr>
+<th>Vesrion Name</th>
+<th>ProducrID</th>
+<th>UnitPrice</th>
+<th>NewUnitPrice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>10,85,800</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>10,67,100</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>19,45,800</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">],</span> <span class="n">Meaure</span><span class="p">[</span><span class="n">UnitSold</span><span class="p">],</span>
+ <span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">*</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitSold</span><span class="p">])</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">PriceTimesUnitSold</span> <span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = product of unit sold and unit price</p>
+<p>Explaination:</p>
+<table>
+<thead>
+<tr>
+<th>Version Name</th>
+<th>ProductID</th>
+<th>UnitPrice</th>
+<th>UnitSold</th>
+<th>PriceTimesUnitSold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>3</td>
+<td>32,573</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>1</td>
+<td>10,671</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>3</td>
+<td>58,374</td>
+</tr>
+</tbody>
+</table>
 <h2 id="division">Division</h2>
 <p>The Division Operator is the asterisk (/).</p>
-<p>Example:
-5 / 3
-result = 1.6666666667</p>
-<p>Example:
-Measure.[unit price] / 100
-result = unit price divided by one hundred</p>
-<p>Example:
-Measure.[unit price] / Measure.[unit cost]
-result = ratio of unit price to unit cost</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span><span class="p">(</span><span class="mi">5</span> <span class="o">/</span> <span class="mi">3</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = 1.6666666667</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span><span class="o">/</span><span class="mi">100</span><span class="p">)</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">NewUnitPrice</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = unit price divided by one hundred</p>
+<p>Explanation:</p>
+<table>
+<thead>
+<tr>
+<th>Vesrion Name</th>
+<th>ProducrID</th>
+<th>UnitPrice</th>
+<th>NewUnitPrice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10001798</td>
+<td>10,858</td>
+<td>109</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002545</td>
+<td>10,671</td>
+<td>107</td>
+</tr>
+<tr>
+<td>CurrentWorkingView</td>
+<td>FUR-BO-10002613</td>
+<td>19,458</td>
+<td>195</td>
+</tr>
+</tbody>
+</table>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">],</span> <span class="n">Measure</span><span class="p">.[</span><span class="n">UnitCost</span><span class="p">],</span> 
+<span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span> <span class="o">/</span> <span class="n">Measure</span><span class="p">.[</span><span class="n">UnitCost</span><span class="p">])</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">PriceRatioCost</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = ratio of unit price to unit cost</p>
 <p>Note:when dividing measures, if a measure has a null value, then the return value of the Division Operator will be null. Also, if the divisor is equal to zero, this will cause an error. To avoid this, you should use the if/then/else function to check whether the divisor is non-zero.</p>
 <h2 id="power">Power</h2>
 <p>The Power Operator is the caret symbol (^). It raises the first input to the power of the second input and returns the result as a number.</p>
-<p>Example:
-5^3
-result=125</p>
-<p>Example:
-Measure.[unit price] ^ 2
-result = unit price is squared</p>
-<p>Example:
-Measure.[unit price] ^ Measure.[unit cost]
-result = unit price raised to the power of unit cost</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span><span class="p">(</span><span class="mi">5</span><span class="o">^</span><span class="mi">3</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result=125</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span> <span class="o">^</span> <span class="mi">2</span><span class="p">)</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">PricePower2</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = Unit price is squared</p>
+<p>Example:</p>
+<div class="codehilite"><pre><span></span><span class="k">Select</span> <span class="p">(</span><span class="k">Version</span><span class="p">.[</span><span class="k">Version</span> <span class="n">Name</span><span class="p">]</span><span class="o">*</span><span class="n">Product</span><span class="p">.[</span><span class="n">ProductID</span><span class="p">]</span><span class="o">*</span>
+<span class="err">{</span><span class="p">(</span><span class="n">Measure</span><span class="p">.[</span><span class="n">UnitPrice</span><span class="p">]</span> <span class="o">^</span> <span class="n">Measure</span><span class="p">.[</span><span class="n">UnitCost</span><span class="p">])</span> <span class="k">as</span> <span class="n">Transient</span><span class="p">.</span><span class="n">PricePowerCost</span><span class="err">}</span><span class="p">);</span>
+</pre></div>
+
+
+<p>result = Unit price raised to the power of unit cost</p>
 <h1 id="string-operators">String Operators</h1>
 <p>Concatenation
 The Concatenation Operator is the plus sign (+).  It is used to concatenate two strings.  For example,
-"Web" + "COD"
-In this example, the two strings are combined and the return value is the single string “WebCOD”.</p>
+<code>"Web" + "COD"</code>
+In this example, the two strings are combined and the return value is the single string <code>“WebCOD”.</code></p>
                 
                   
                 
@@ -521,6 +790,20 @@ In this example, the two strings are combined and the return value is the single
             </div>
           </a>
         
+        
+          <a href="../relational/" title="Relational" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Relational
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
         
       </nav>
     </div>

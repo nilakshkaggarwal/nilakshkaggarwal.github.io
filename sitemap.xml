@@ -1,28 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>http://localhost/SupplyRefModel/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <loc>https://nilakshkaggarwal.github.io/</loc>
+     <lastmod>2018-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://localhost/SupplyRefModel/top-level/Introduction/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <loc>https://nilakshkaggarwal.github.io/top-level/Introduction/</loc>
+     <lastmod>2018-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://localhost/SupplyRefModel/top-level/terminology/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <loc>https://nilakshkaggarwal.github.io/top-level/terminology/</loc>
+     <lastmod>2018-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://localhost/SupplyRefModel/transforming-data/querying/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <loc>https://nilakshkaggarwal.github.io/transforming-data/querying/</loc>
+     <lastmod>2018-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>http://localhost/SupplyRefModel/Operation/Arithmetic/</loc>
-     <lastmod>2018-08-27</lastmod>
+     <loc>https://nilakshkaggarwal.github.io/Operation/Arithmetic/</loc>
+     <lastmod>2018-08-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nilakshkaggarwal.github.io/Operation/relational/</loc>
+     <lastmod>2018-08-28</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://nilakshkaggarwal.github.io/Operation/Logical/</loc>
+     <lastmod>2018-08-28</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
