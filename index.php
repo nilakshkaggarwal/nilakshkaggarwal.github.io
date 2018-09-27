@@ -1,6 +1,6 @@
 <?php // index.php
 require_once 'openid.php';
-$openid = new LightOpenID("my-domain.com");
+$openid = new LightOpenID("nilakshkaggarwal.github.io");
 
 $openid->identity = 'https://www.google.com/accounts/o8/id';
 $openid->required = array(
@@ -8,7 +8,7 @@ $openid->required = array(
   'namePerson/last',
   'contact/email',
 );
-$openid->returnUrl = 'http://nilakshkaggarwal.github.io/login.php'
+$openid->returnUrl = 'https://nilakshkaggarwal.github.io/login.php'
 ?>
 
 <a href="<?php echo $openid->authUrl() ?>">Login with Google</a>
