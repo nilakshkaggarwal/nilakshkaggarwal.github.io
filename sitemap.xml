@@ -1,28 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-09</lastmod>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/</loc>
+     <lastmod>2019-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-09</lastmod>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/querying-data/querying-data/</loc>
+     <lastmod>2019-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-09</lastmod>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/modifying-data/modifying-data/</loc>
+     <lastmod>2019-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-09</lastmod>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/modifying-data/modify-members/</loc>
+     <lastmod>2019-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
     <url>
-     <loc>None</loc>
-     <lastmod>2018-10-09</lastmod>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/modifying-data/modify-facts/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/transferring-data/transferring-data/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/formats/number/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/formats/datetime/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/operators/Arithmetic/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/operators/relational/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/operators/Logical/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/operators/Special-Operator/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/functions/string/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/functions/numeric/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/functions/time/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/functions/conditional/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/functions/analytical/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/spreading/spreading/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/controlling-access/data-security/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/controlling-access/roles/</loc>
+     <lastmod>2019-01-14</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    <url>
+     <loc>https://genie.o9solutions.com/industry-solutions/IbplQuickRef/controlling-access/rules/</loc>
+     <lastmod>2019-01-14</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
